@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihomo配置修改器</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mihomo配置修改器</h1>
+        <p class="description">上传Mihomo(原Clash Meta)配置文件，添加listeners配置，实现多端口不同策略组</p>
+        
+        <div class="upload-section">
+            <div class="file-upload">
+                <input type="file" id="configFile" accept=".yml,.yaml" />
+                <label for="configFile">选择配置文件</label>
+            </div>
+            <div id="fileName" class="file-name"></div>
+        </div>
+
+        <div id="configContent" class="config-content" style="display: none;">
+            <h2>添加Listeners配置</h2>
+            
+            <div id="listenersList" class="listeners-list">
+                <!-- 监听器配置项将在这里动态添加 -->
+            </div>
+
+            <div class="add-listener">
+                <button id="addListener" class="btn-add">+ 添加监听器</button>
+            </div>
+
+            <div class="actions">
+                <button id="generateConfig" class="btn-primary">生成配置</button>
+                <button id="downloadConfig" class="btn-download" disabled>下载配置</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 监听器模板 -->
+    <template id="listenerTemplate">
+        <div class="listener-item">
+            <div class="listener-header">
+                <h3>监听器 #<span class="listener-number"></span></h3>
+                <button class="btn-remove">删除</button>
+            </div>
+            <div class="form-group">
+                <label for="name">名称:</label>
+                <input type="text" class="name" placeholder="例如: HK代理" required>
+            </div>
+            <div class="form-group">
+                <label for="type">类型:</label>
+                <select class="type">
+                    <option value="mixed">mixed</option>
+                    <option value="http">http</option>
+                    <option value="socks">socks</option>
+                    <option value="redir">redir</option>
+                    <option value="tproxy">tproxy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="port">端口:</label>
+                <input type="number" class="port" placeholder="例如: 8880" min="1" max="65535" required>
+            </div>
+            <div class="form-group">
+                <label for="listen">监听地址:</label>
+                <input type="text" class="listen" placeholder="例如: 0.0.0.0" value="0.0.0.0" required>
+            </div>
+            <div class="form-group">
+                <label for="proxy">代理组名称:</label>
+                <input type="text" class="proxy" placeholder="例如: HK策略组" required>
+            </div>
+            <div class="form-group">
+                <label for="proxyRegex">代理正则表达式:</label>
+                <input type="text" class="proxy-regex" placeholder="例如: hk-regex 或 香港|HK|Hong" required>
+            </div>
+        </div>
+    </template>
+
+    <script src="./js/js-yaml.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
