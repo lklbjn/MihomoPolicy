@@ -48,24 +48,18 @@ h2 {
 }
 
 .file-upload {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
-.file-upload input[type=file] {
-    position: absolute;
-    font-size: 100px;
-    opacity: 0;
-    right: 0;
-    top: 0;
-    cursor: pointer;
+.file-upload input[type="file"] {
+    display: none;
 }
 
 .file-upload label {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #3498db;
+    padding: 10px 20px;
+    background-color: #4a89dc;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -73,7 +67,34 @@ h2 {
 }
 
 .file-upload label:hover {
-    background-color: #2980b9;
+    background-color: #3b7dd8;
+}
+
+.url-input {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.url-input input[type="text"] {
+    padding: 9px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.btn-url {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-url:hover {
+    background-color: #4cae4c;
 }
 
 .file-name {
@@ -137,19 +158,65 @@ h2 {
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
+.listener-actions {
+    margin: 20px 0;
+    text-align: center;
+}
+
 .btn-add {
-    background-color: #2ecc71;
+    padding: 8px 16px;
+    background-color: #5bc0de;
     color: white;
     border: none;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
     transition: background-color 0.3s;
 }
 
 .btn-add:hover {
-    background-color: #27ae60;
+    background-color: #46b8da;
+}
+
+.btn-save, .btn-load, .btn-export, .btn-import {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.btn-save {
+    background-color: #f0ad4e;
+}
+
+.btn-save:hover {
+    background-color: #eea236;
+}
+
+.btn-load {
+    background-color: #5cb85c;
+}
+
+.btn-load:hover {
+    background-color: #4cae4c;
+}
+
+.btn-export {
+    background-color: #337ab7;
+}
+
+.btn-export:hover {
+    background-color: #286090;
+}
+
+.btn-import {
+    background-color: #d9534f;
+}
+
+.btn-import:hover {
+    background-color: #c9302c;
 }
 
 .btn-remove {

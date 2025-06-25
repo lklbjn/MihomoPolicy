@@ -16,6 +16,10 @@
                 <input type="file" id="configFile" accept=".yml,.yaml" />
                 <label for="configFile">选择配置文件</label>
             </div>
+            <div class="url-input">
+                <input type="text" id="configUrl" placeholder="或输入配置文件URL" />
+                <button id="loadUrlConfig" class="btn-url">加载URL</button>
+            </div>
             <div id="fileName" class="file-name"></div>
         </div>
 
@@ -26,8 +30,13 @@
                 <!-- 监听器配置项将在这里动态添加 -->
             </div>
 
-            <div class="add-listener">
+            <div class="listener-actions">
                 <button id="addListener" class="btn-add">+ 添加监听器</button>
+                <button id="saveListeners" class="btn-save">保存配置</button>
+                <button id="loadListeners" class="btn-load">加载配置</button>
+                <button id="exportListeners" class="btn-export">导出配置</button>
+                <button id="importListeners" class="btn-import">导入配置</button>
+                <input type="file" id="importFile" accept=".json" style="display: none;" />
             </div>
 
             <div class="actions">
