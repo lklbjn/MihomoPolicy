@@ -69,12 +69,6 @@ IP-CIDR,208.64.201.0/23
 IP-CIDR,208.64.202.0/23
 IP-CIDR,208.64.203.0/23
 IP-CIDR,208.78.164.0/22
-# xbox
-DOMAIN-SUFFIX,xbox.com
-DOMAIN-SUFFIX,xboxab.com
-DOMAIN-SUFFIX,xboxab.net
-DOMAIN-SUFFIX,xboxlive.com
-DOMAIN-SUFFIX,xboxservice.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,gamepass.com
 
