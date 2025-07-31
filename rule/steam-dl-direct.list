@@ -17,8 +17,6 @@ DOMAIN-SUFFIX,steamstatic.com.8686c.com
 DOMAIN-SUFFIX,steamchina.com
 # steam
 DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamcommunity.com
-DOMAIN-SUFFIX,api.steampowered.com
 DOMAIN-SUFFIX,*.cm.steampowered.com
 DOMAIN-SUFFIX,*.steamserver.net
 IP-CIDR,103.10.124.0/24
