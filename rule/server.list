@@ -21,6 +21,7 @@ IP-CIDR,140.235.37.241/24
 
 # Website
 DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,hk.soyo.host
 DOMAIN-SUFFIX,iiishu.com
 DOMAIN-SUFFIX,jkju.cc
 DOMAIN-SUFFIX,gamer520.com
