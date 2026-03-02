@@ -1,0 +1,10 @@
+# NAME: OpenRouter
+# AUTHOR: Copilot
+# DESCRIPTION: Clash rules for OpenRouter API endpoints
+# UPDATED: 2026-03-02
+
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,api.openrouter.ai
+DOMAIN-SUFFIX,models.openrouter.ai
+DOMAIN-SUFFIX,chat.openrouter.ai
+DOMAIN-KEYWORD,openrouter
